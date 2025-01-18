@@ -6,6 +6,7 @@ SRCDIR := .
 SRCS += $(SRCDIR)/main.cpp
 SRCS += $(SRCDIR)/Zombie.cpp
 SRCS += $(SRCDIR)/newZombie.cpp
+SRCS += $(SRCDIR)/randomChump.cpp
 
 # 実行ファイル名
 NAME = zombie
