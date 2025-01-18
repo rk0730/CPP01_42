@@ -1,0 +1,8 @@
+.DS_Store
+*.o
+*.a
+a.out
+.vscode
+
+# ex00
+zombie
