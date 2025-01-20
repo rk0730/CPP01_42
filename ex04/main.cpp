@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv)
 {
-	if (argc != 4 || strlen(argv[2]) == 0 || strlen(argv[3]) == 0)
+	if (argc != 4 || strlen(argv[1]) == 0 || strlen(argv[2]) == 0 || strlen(argv[3]) == 0)
 	{
 		std::cerr << "Usage: " << argv[0] << " <ifilename> <s1> <s2>" << std::endl;
 		return (1);
