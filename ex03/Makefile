@@ -5,6 +5,7 @@ CFLAGS := -std=c++98 -Wall -Wextra -Werror
 SRCDIR := .
 SRCS += $(SRCDIR)/main.cpp
 SRCS += $(SRCDIR)/Weapon.cpp
+SRCS += $(SRCDIR)/HumanA.cpp
 
 # 実行ファイル名
 NAME = violence
