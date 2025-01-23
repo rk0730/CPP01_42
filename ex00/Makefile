@@ -1,14 +1,12 @@
 CC := g++
 CFLAGS := -std=c++98 -Wall -Wextra -Werror
 
-# SRCS
 SRCDIR := .
 SRCS += $(SRCDIR)/main.cpp
 SRCS += $(SRCDIR)/Zombie.cpp
 SRCS += $(SRCDIR)/newZombie.cpp
 SRCS += $(SRCDIR)/randomChump.cpp
 
-# 実行ファイル名
 NAME = zombie
 
 all: $(NAME)

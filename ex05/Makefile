@@ -1,12 +1,10 @@
 CC := g++
 CFLAGS := -std=c++98 -Wall -Wextra -Werror
 
-# SRCS
 SRCDIR := .
 SRCS += $(SRCDIR)/main.cpp
 SRCS += $(SRCDIR)/Harl.cpp
 
-# 実行ファイル名
 NAME = harl
 
 all: $(NAME)
