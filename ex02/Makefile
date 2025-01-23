@@ -1,11 +1,9 @@
 CC := g++
 CFLAGS := -std=c++98 -Wall -Wextra -Werror
 
-# SRCS
 SRCDIR := .
 SRCS += $(SRCDIR)/main.cpp
 
-# 実行ファイル名
 NAME = brain
 
 all: $(NAME)
