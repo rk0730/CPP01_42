@@ -7,6 +7,9 @@ SRCS += $(SRCDIR)/Weapon.cpp
 SRCS += $(SRCDIR)/HumanA.cpp
 SRCS += $(SRCDIR)/HumanB.cpp
 
+OBJDIR := objs
+OBJS = $(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
+
 NAME = violence
 
 all: $(NAME)
@@ -14,9 +17,12 @@ all: $(NAME)
 $(NAME): $(SRCS)
 	$(CC) $(CFLAGS) -o $@ $^
 
+clean:
+	rm -rf $(OBJDIR)
+
 fclean:
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all fclean re
+.PHONY: all clean fclean re
