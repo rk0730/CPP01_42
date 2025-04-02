@@ -10,12 +10,12 @@ public:
 	void complain(std::string level);
 
 private:
-	void debug(void);
-	void info(void);
-	void warning(void);
-	void error(void);
-	std::string levels[4];
-	void (Harl::* actions[4])(void);
+	void _debug(void);
+	void _info(void);
+	void _warning(void);
+	void _error(void);
+	std::string _levels[4];
+	void (Harl::* _actions[4])(void);
 };
 
 #endif

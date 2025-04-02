@@ -12,7 +12,7 @@ public:
 	void setName(std::string name);
 
 private:
-	std::string name;
+	std::string _name;
 };
 
 #endif
