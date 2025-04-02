@@ -1,4 +1,4 @@
-CC := g++
+CXX := c++
 CFLAGS := -std=c++98 -Wall -Wextra -Werror
 
 SRCDIR := .
@@ -14,7 +14,7 @@ NAME = zombie
 all: $(NAME)
 
 $(NAME): $(SRCS)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CXX) $(CFLAGS) -o $@ $^
 
 clean:
 	rm -rf $(OBJDIR)
