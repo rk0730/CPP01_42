@@ -2,15 +2,15 @@
 
 Weapon::Weapon(std::string type)
 {
-	this->type = type;
+	_type = type;
 }
 
 const std::string &Weapon::getType() const
 {
-	return type;
+	return _type;
 }
 
 void Weapon::setType(std::string type)
 {
-	this->type = type;
+	_type = type;
 }

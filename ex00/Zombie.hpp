@@ -11,7 +11,7 @@ public:
 	void announce(void);
 
 private:
-	std::string name;
+	std::string _name;
 };
 
 #endif
