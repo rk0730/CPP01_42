@@ -7,19 +7,25 @@ SRCS += $(SRCDIR)/Zombie.cpp
 SRCS += $(SRCDIR)/zombieHorde.cpp
 
 OBJDIR := objs
-OBJS = $(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
+OBJS = $(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 
 NAME = zombie
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
+$(NAME): $(OBJS)
 	$(CXX) $(CFLAGS) -o $@ $^
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp | $(OBJDIR)
+	$(CXX) $(CFLAGS) -c -MMD -MP $< -o $@
+
+$(OBJDIR):
+	mkdir -p $(OBJDIR)
 
 clean:
 	rm -rf $(OBJDIR)
 
-fclean:
+fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
